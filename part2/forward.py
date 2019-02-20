@@ -31,3 +31,5 @@ def forward(V, a, b, initial_distribution):
 
 alpha = forward(V, a, b, initial_distribution)
 print(alpha)
+
+
