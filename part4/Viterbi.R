@@ -59,6 +59,43 @@ BaumWelch = function(v, a, b, initial_distribution, n.iter = 100){
   return(list(a = a, b = b, initial_distribution = initial_distribution))
 }
 
+
+Viterbi=function(v,a,b,initial_distribution) {
+  
+  T = length(v)
+  M = nrow(a)
+  prev = matrix(0, T-1, M)
+  omega = matrix(0, M, T)
+  
+  omega[, 1] = log(initial_distribution * b[, v[1]])
+  for(t in 2:T){
+    for(s in 1:M) {
+      probs = omega[, t - 1] + log(a[, s]) + log(b[s, v[t]])
+      prev[t - 1, s] = which.max(probs)
+      omega[s, t] = max(probs)
+    }
+  }
+  
+  S = rep(0, T)
+  last_state=which.max(omega[,ncol(omega)])
+  S[1]=last_state
+  
+  j=2
+  for(i in (T-1):1){
+    S[j]=prev[i,last_state] 
+    last_state=prev[i,last_state] 
+    j=j+1
+  }
+  
+  S[which(S==1)]='A'
+  S[which(S==2)]='B'
+  
+  S=rev(S)
+  
+  return(S)
+  
+}
+
 data = read.csv("data_r.csv")
 
 M=2; K=3
@@ -68,7 +105,8 @@ B = matrix(1:6, M, K)
 B = B/rowSums(B)
 initial_distribution = c(1/2, 1/2)
 
-(myout = BaumWelch(data$Visible, A, B, initial_distribution, n.iter = 1))
+myout = BaumWelch(data$Visible, A, B, initial_distribution, n.iter = 100)
+myout.hidden=Viterbi(data$Visible,myout$a,myout$b,initial_distribution)
 
 library(HMM)
 hmm =initHMM(c("A", "B"), c(1, 2, 3), 
@@ -76,4 +114,7 @@ hmm =initHMM(c("A", "B"), c(1, 2, 3),
               transProbs = A, emissionProbs = B)
 
 true.out = baumWelch(hmm, data$Visible, maxIterations=100, pseudoCount=0)
-true.out$hmm
+
+true.viterbi = viterbi(true.out$hmm, data$Visible)
+sum(true.viterbi != myout.hidden)
+
