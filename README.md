@@ -2,18 +2,18 @@
 
 This is the code base of the following articles. Please visit the website for the detail explanation of the code.
 
-![alt text](https://adeveloperdiary.com/data-science/machine-learning/introduction-to-hidden-markov-model/attachment/introduction-to-hidden-markov-model-adeveloperdiary-com-7/)
+![alt text](https://adeveloperdiary.com/assets/img/Introduction-to-Hidden-Markov-Model-adeveloperdiary.com-7.jpg)
 
-http://www.adeveloperdiary.com/data-science/machine-learning/introduction-to-hidden-markov-model/
+https://adeveloperdiary.com/data-science/machine-learning/introduction-to-hidden-markov-model/
 
-![alt text](https://adeveloperdiary.com/data-science/machine-learning/forward-and-backward-algorithm-in-hidden-markov-model/attachment/forward-and-backward-algorithm-in-hidden-markov-model-adeveloperdiary-com-3/)
+![alt text](https://adeveloperdiary.com/assets/img/Forward-and-Backward-Algorithm-in-Hidden-Markov-Model-adeveloperdiary.com_-1.jpg)
 
-http://www.adeveloperdiary.com/data-science/machine-learning/forward-and-backward-algorithm-in-hidden-markov-model/
+https://adeveloperdiary.com/data-science/machine-learning/forward-and-backward-algorithm-in-hidden-markov-model/
 
-![alt text](https://adeveloperdiary.com/data-science/machine-learning/derivation-and-implementation-of-baum-welch-algorithm-for-hidden-markov-model/attachment/derivation-and-implementation-of-baum-welch-algorithm-for-hidden-markov-models-adeveloperdiary-com-1/)
+![alt text](https://adeveloperdiary.com/assets/img/Implement-Viterbi-Algorithm-in-Hidden-Markov-Model-using-Python-and-R-adeveloperdiary.com-5.jpg)
 
-http://www.adeveloperdiary.com/data-science/machine-learning/derivation-and-implementation-of-baum-welch-algorithm-for-hidden-markov-model/
+https://adeveloperdiary.com/data-science/machine-learning/derivation-and-implementation-of-baum-welch-algorithm-for-hidden-markov-model/
 
-![alt text](https://adeveloperdiary.com/data-science/machine-learning/implement-viterbi-algorithm-in-hidden-markov-model-using-python-and-r/attachment/implement-viterbi-algorithm-in-hidden-markov-model-using-python-and-r-adeveloperdiary-com-5/)
+![alt text](https://adeveloperdiary.com/assets/img/Implement-Viterbi-Algorithm-in-Hidden-Markov-Model-using-Python-and-R-adeveloperdiary.com-5.jpg)
 
-http://www.adeveloperdiary.com/data-science/machine-learning/implement-viterbi-algorithm-in-hidden-markov-model-using-python-and-r/
+https://adeveloperdiary.com/data-science/machine-learning/implement-viterbi-algorithm-in-hidden-markov-model-using-python-and-r/
